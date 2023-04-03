@@ -1,0 +1,18 @@
+extends layouts.pug 
+
+
+block content
+    form.form(action="/create", method= "POST") 
+        label.label Name of medicine
+        input.input(type="text", name="Name") 
+
+        label.label Country of origin
+        input.input(type="text", name="Country") 
+        
+        label.label Purpose
+        input.input(type="text", name="Purpose") 
+        
+        label.label Price
+        input.input(type="text", name="Price")
+
+        button.input.btn Add New Client 

@@ -1,0 +1,21 @@
+extends layouts.pug
+
+
+block content
+
+    if created 
+        p Medicine created
+   
+    .section.flex 
+        ul.list
+
+            if medicines 
+                each medicine in medicines  
+                    li.list_item 
+                        a(href= medicines.id) #{medicine.Name}
+                        
+        
+            
+            
+
+           

@@ -1,0 +1,24 @@
+extends layouts.pug
+
+block content 
+
+    
+    list.detail_list
+        if medicines 
+            each medicine in medicines  
+                li.list_item.D_list_item
+                    if deleted 
+                        p.deleted deleted
+                    b Name:    
+                        a(href= medicines.id) #{medicine.Name}
+                       
+                    b Country:
+                        a(href= medicines.id) #{medicine.Country}
+                        
+                    b Purpose:
+                        a(href= medicines.id) #{medicine.Purpose}
+                        
+                    b Price:
+                        a(href= medicines.id) #{medicine.Price} 
+                     
+                    a.delete(href=`/${medicine.id}/delete`)  delete    
