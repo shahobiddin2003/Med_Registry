@@ -15,4 +15,4 @@ The last Page is Called Detail page and this page shows the product with its bri
 
 ## Github Repo:
 
-[label](https://github.com/shahobiddin2003/Med_Registry)
+[Click here](https://github.com/shahobiddin2003/Med_Registry)
